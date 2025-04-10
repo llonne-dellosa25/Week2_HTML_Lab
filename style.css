@@ -53,15 +53,30 @@
     margin-bottom: 30px;
   }
   
-  .category-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+  .carousel-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
     margin-bottom: 30px;
   }
   
+  .carousel-track {
+    display: flex;
+    gap: 20px;
+    animation: scroll 30s linear infinite;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
   .category-card {
+    flex: 0 0 auto;
     background-color: #ddd;
     width: 160px;
     height: 120px;
@@ -70,7 +85,9 @@
     justify-content: center;
     align-items: center;
     font-size: 0.9rem;
+    border-radius: 5px;
   }
+  
   
   .shop-all-btn {
     background-color: #d9d9d9;
