@@ -1,168 +1,107 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #fef6f7;
-    color: #2b2b2b;
-}
-
-.container {
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+  }
+  
+  .top-bar {
+    background-color: #d9d9d9;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 80px;
-    height: 100vh;
-}
-
-.left-panel {
-    flex: 1;
-    padding-right: 40px;
-}
-
-.left-panel h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 32px;
-    margin-bottom: 30px;
-}
-
-.illustration {
-    width: 100%;
-    max-width: 500px;
-}
-
-.right-panel {
-    flex: 1;
-    max-width: 400px;
-    background-color: #f8dfff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.05);
-}
-
-.right-panel h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
+    padding: 15px 40px;
+  }
+  
+  .logo {
     font-weight: bold;
-    margin-bottom: 5px;
-}
-
-input[type="email"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-}
-
-.password-wrapper {
-    position: relative;
-}
-
-.password-wrapper input {
-    width: 100%;
-    padding: 10px 40px 10px 10px; /* space for the icon on the right */
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-sizing: border-box;
-}
-
-.toggle-visibility {
-    position: absolute;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    color: #555;
-    font-size: 18px;
-    width: 20px;
-    text-align: center;
-}
-
-.forgot {
-    text-align: right;
-    font-size: 12px;
-    margin-top: -10px;
-    margin-bottom: 20px;
-}
-
-.btn-login {
-    background-color: #d89aa2;
-    border: none;
-    color: white;
-    width: 100%;
-    padding: 12px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.or-divider {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 20px 0;
-}
-
-.or-divider::before,
-.or-divider::after {
-    content: "";
-    flex: 1;
-    border-bottom: 1px solid #aaa;
-}
-
-.or-divider:not(:empty)::before {
-    margin-right: 10px;
-}
-
-.or-divider:not(:empty)::after {
-    margin-left: 10px;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 15px;
-    height: 50px; /* Adjusted height to match the icons */
-}
-
-.social-icons a {
-    display: inline-block;
-}
-
-.social-icons img {
-    width: 40px; /* Set the width of the icons */
-    height: auto; /* Maintain aspect ratio */
-    transition: transform 0.3s ease-in-out;
-}
-
-.social-icons img:hover {
-    transform: scale(1.1); /* Add hover effect for zoom */
-}
-
-.signup {
-    text-align: center;
-    font-size: 14px;
-}
-
-.signup a {
+    font-size: 1.2rem;
+  }
+  
+  .nav-links a {
+    margin-left: 20px;
     text-decoration: none;
     color: #000;
-    font-weight: bold;
-}
-
-.signup a:hover {
-    text-decoration: underline;
-}
+    font-size: 0.9rem;
+  }
+  
+  .banner {
+    background-color: #f4a5b6;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner-text {
+    font-size: 0.9rem;
+    color: #000;
+  }
+  
+  .categories {
+    background-color: #fef4f3;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .categories h2 {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  .category-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  .category-card {
+    background-color: #ddd;
+    width: 160px;
+    height: 120px;
+    border: 10px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+  
+  .shop-all-btn {
+    background-color: #d9d9d9;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+  
+  .footer {
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    font-size: 0.7rem;
+  }
+  
+  .footer-left,
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .footer-center {
+    text-align: center;
+  }
+  
+  .footer-right .icons span {
+    margin-right: 5px;
+    font-size: 1rem;
+  }
+  
